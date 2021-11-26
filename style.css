@@ -112,7 +112,7 @@ p{
     text-align: center;
 }
 
-.key-feature__image {
+.galeria {
     display: inline-block;
     background: white;
     border: 1px solid rgb(112, 112, 112);
@@ -147,6 +147,8 @@ p{
     
     .header {
         font-size: 20px;
+        margin-right: 40rem;
+        top: 5rem;
     }
     
     .texto {
@@ -166,8 +168,9 @@ p{
 
     .header2 {
         color: #2b0000;
-        left: 0;
-        font-size: 20px;
+        font-size: 25px;
+        margin-right: 35rem;
+        top: 5rem;
     }
 
     .texto2 {
@@ -189,15 +192,15 @@ p{
         font-size: 15px;
     }
     
-    .key-feature__image {
+    .galeria {
         display: inline-block;
         background: white;
         border: 1px solid rgb(112, 112, 112);
         border-radius: 1rem;
-        width: 80px;
-        height: 80px;
-        margin: 0.5rem 0.5rem;
-        margin-left: 6.5rem;
+        width: 75px;
+        height: 75px;
+        margin: 0.2rem 2.5rem;
+        margin-left: 4.5rem;
     }
 
     .only2 {
@@ -217,7 +220,7 @@ p{
     .menu-item {
         display: inline-block;
         color: white;
-        width: 5rem;
+        width: 4.9rem;
     }
     
     .header {
@@ -243,8 +246,9 @@ p{
 
     .header2 {
         color: #2b0000;
-        left: 0;
-        font-size: 15px;
+        font-size: 12px;
+        margin-right: 20rem;
+        top: 5rem;
     }
 
     .texto2 {
@@ -265,7 +269,7 @@ p{
         font-size: 15px;
     }
     
-    .key-feature__image {
+    .galeria {
         display: inline-block;
         background: white;
         border: 1px solid rgb(112, 112, 112);
@@ -273,7 +277,7 @@ p{
         width: 70px;
         height: 70px;
         margin: 0.5rem 0.5rem;
-        margin-left: 6.5rem;
+        margin-left: 7.5rem;
     }
 
     .only1 {

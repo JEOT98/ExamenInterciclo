@@ -8,9 +8,9 @@ li {
     list-style: none;
 }
 
-a {
+/* a {
     text-decoration: none;
-}
+} */
 
 body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,7 +24,7 @@ p{
 .menu {
     position: absolute;
     z-index: 100;
-    background-color: #7e7e7e;
+    background-color: #2b0000;
 	width: 50%;
 	height: 100vh;
 }
@@ -38,17 +38,29 @@ p{
 
 .menu-item {
     display: inline-block;
-    color: white;
     width: 8rem;
 }
 
+.menu-item a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.2rem 0;
+}
+
+.menu-item a:hover {
+    color:#747474;
+}
+
 .header {
+    color: white;
     margin: 2rem;
     font-size: 100px;
     font-weight: lighter;
 }
 
 .texto {
+    color: rgb(189, 189, 189);
     text-align: center;
     margin: 0 10rem;
 }
@@ -66,6 +78,7 @@ p{
 }
 
 .header2 {
+    color: #2b0000;
     margin: 1rem 15rem;
     margin-left: 5rem;
     font-size: 40px;
@@ -73,13 +86,14 @@ p{
 }
 
 .texto2 {
+    color: rgb(31, 31, 31);
     margin: 0 15rem;
     margin-left: 5rem;
 }
 
 .section3-container{
     position: fixed;
-    background-color: #8b8b8b;
+    background-color: black;
 	left: 50%;
     bottom: 0;
 	width: calc( 100% - 50% );
@@ -92,6 +106,10 @@ p{
     margin-left: .5rem;
     font-size: 25px;
     font-weight: lighter;
+}
+
+.image-container {
+    text-align: center;
 }
 
 .key-feature__image {
@@ -109,7 +127,7 @@ p{
     .menu {
         position: absolute;
         z-index: 100;
-        background-color: #7e7e7e;
+        background-color: #2b0000;
         width: 100vw;
         height: 30%;
     }
@@ -124,7 +142,7 @@ p{
     .menu-item {
         display: inline-block;
         color: white;
-        width: 4rem;
+        width: 6rem;
     }
     
     .header {
@@ -147,6 +165,7 @@ p{
     }
 
     .header2 {
+        color: #2b0000;
         left: 0;
         font-size: 20px;
     }
@@ -159,7 +178,7 @@ p{
 
     .section3-container{
         position: fixed;
-        background-color: #8b8b8b;
+        background-color: #2b0000;
         left: 0;
         bottom: 0;
         width: 100vw;
@@ -181,7 +200,7 @@ p{
         margin-left: 6.5rem;
     }
 
-    .only {
+    .only2 {
         display: none;
     }
 }
@@ -190,12 +209,19 @@ p{
     .menu {
         position: absolute;
         z-index: 100;
-        background-color: #7e7e7e;
+        background-color: #2b0000;
         width: 100vw;
         height: 40%;
     }
+
+    .menu-item {
+        display: inline-block;
+        color: white;
+        width: 5rem;
+    }
     
     .header {
+        color: white;
         font-size: 30px;
         margin-right: 15rem;
         top: 5rem;
@@ -216,6 +242,7 @@ p{
     }
 
     .header2 {
+        color: #2b0000;
         left: 0;
         font-size: 15px;
     }
@@ -227,7 +254,7 @@ p{
 
     .section3-container{
         position: fixed;
-        background-color: #8b8b8b;
+        background-color: #2b0000;
         left: 0;
         bottom: 0;
         width: 100vw;
@@ -249,7 +276,11 @@ p{
         margin-left: 6.5rem;
     }
 
-    .only {
+    .only1 {
+        display: none;
+    }
+
+    .only2 {
         display: none;
     }
 }

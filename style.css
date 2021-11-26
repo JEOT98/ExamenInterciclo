@@ -17,16 +17,16 @@ body{
 	background-color: #afafaf;
 }
 
-p{
-	font-size: .7rem;
-}
-
 .menu {
     position: absolute;
     z-index: 100;
     background-color: #2b0000;
 	width: 50%;
 	height: 100vh;
+}
+
+.menu a{
+    transition: .3s;
 }
 
 .menu-container {
@@ -48,21 +48,24 @@ p{
     padding: 0.2rem 0;
 }
 
-.menu-item a:hover {
-    color:#747474;
+.menu-item a:hover,
+.menu-item a:active {
+    color:#afafaf;
+    border-bottom: 5px solid #afafaf;
 }
 
 .header {
     color: white;
-    margin: 2rem;
-    font-size: 100px;
+    margin: 2rem 0;
+    font-size: 80px;
     font-weight: lighter;
 }
 
 .texto {
+    font-size: 13px;
     color: rgb(189, 189, 189);
     text-align: center;
-    margin: 0 10rem;
+    margin: 2rem 10rem;
 }
 
 .texto p{
@@ -80,15 +83,22 @@ p{
 .header2 {
     color: #2b0000;
     margin: 1rem 15rem;
-    margin-left: 5rem;
+    margin-left: 0;
     font-size: 40px;
-    font-weight: lighter;
 }
 
 .texto2 {
+    font-size: 13px;
     color: rgb(31, 31, 31);
     margin: 0 15rem;
     margin-left: 5rem;
+    overflow: hidden;
+}
+
+.flecha {
+    right: 2rem;
+    top: 75%;
+    position: absolute;
 }
 
 .section3-container{
@@ -103,13 +113,15 @@ p{
 .header3 {
     color: white;
     margin: 1rem 15rem;
-    margin-left: .5rem;
-    font-size: 25px;
+    margin-left: 0;
+    font-size: 20px;
     font-weight: lighter;
 }
 
 .image-container {
     text-align: center;
+    margin: 1rem 1rem;
+    padding: 0 1.5rem;
 }
 
 .galeria {
@@ -119,8 +131,7 @@ p{
     border-radius: 1rem;
     width: 100px;
     height: 100px;
-    margin: 0.5rem 0.5rem;
-    margin-left: 3rem;
+    margin: .5rem .5rem;
 }
 
 @media screen and (max-width: 50rem){ 
@@ -134,27 +145,34 @@ p{
     
     .menu-container {
         position: fixed;
-        top: 1rem;
+        top: 0.8rem;
+        margin: 0;
         left: 50%;
         transform: translatex(-50%);
     }
 
     .menu-item {
+        margin: 0 1rem;
         display: inline-block;
         color: white;
-        width: 6rem;
+        width: auto;
     }
     
     .header {
-        font-size: 20px;
+        display: inline-block;
+        position: absolute;
+        font-size: 30px;
         margin-right: 40rem;
-        top: 5rem;
+        top: 2rem;
     }
     
     .texto {
-        text-align: right;
-        margin: 0 0;
-        margin-left: 18rem;
+        font-size: 10px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 16rem;
+        margin-right: 3rem;
+        top: 4rem;
     }
 
     .section2-container{
@@ -167,16 +185,21 @@ p{
     }
 
     .header2 {
+        display: inline-block;
+        position: absolute;
         color: #2b0000;
-        font-size: 25px;
-        margin-right: 35rem;
-        top: 5rem;
+        font-size: 20px;
+        margin-right: 40rem;
+        top: 20%;
     }
 
     .texto2 {
-        text-align: left;
-        margin: 0 1rem;
-        margin-left: 18rem;
+        font-size: 10px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 16rem;
+        margin-right: 3rem;
+        top: 3.5rem;
     }
 
     .section3-container{
@@ -189,9 +212,13 @@ p{
     }
 
     .header3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     
+    .image-container {
+        margin: 1rem 13rem;
+    }
+
     .galeria {
         display: inline-block;
         background: white;
@@ -199,8 +226,7 @@ p{
         border-radius: 1rem;
         width: 75px;
         height: 75px;
-        margin: 0.2rem 2.5rem;
-        margin-left: 4.5rem;
+        margin: 0.2rem 0.2rem;
     }
 
     .only2 {
@@ -219,19 +245,23 @@ p{
 
     .menu-item {
         display: inline-block;
+        vertical-align: middle;
         color: white;
-        width: 4.9rem;
+        width: auto;
+        margin: 0 0.5rem;
     }
     
     .header {
         color: white;
         font-size: 30px;
-        margin-right: 15rem;
-        top: 5rem;
+        margin-right: 20rem;
+        top: .5rem;
     }
     
     .texto {
+        font-size: 8px;
         text-align: center;
+        top: 9rem;
         margin: 1rem 5rem;
     }
 
@@ -247,13 +277,20 @@ p{
     .header2 {
         color: #2b0000;
         font-size: 12px;
-        margin-right: 20rem;
-        top: 5rem;
+        margin-right: 25rem;
+        top: 0;
     }
 
     .texto2 {
+        font-size: 8px;
         text-align: left;
-        margin: 0.5rem 5rem;
+        margin: 1rem 5rem;
+    }
+
+    .flecha {
+        right: 2rem;
+        top: 40%;
+        position: absolute;
     }
 
     .section3-container{
@@ -266,9 +303,13 @@ p{
     }
 
     .header3 {
-        font-size: 15px;
+        font-size: 20px;
     }
     
+    .image-container {
+        margin: 0 8rem;
+    }
+
     .galeria {
         display: inline-block;
         background: white;
@@ -276,8 +317,7 @@ p{
         border-radius: 1rem;
         width: 70px;
         height: 70px;
-        margin: 0.5rem 0.5rem;
-        margin-left: 7.5rem;
+        margin: 0.2rem 0.4rem;
     }
 
     .only1 {
